@@ -1,0 +1,250 @@
+[
+    {
+        "label": "add",
+        "importPath": "operations",
+        "description": "operations",
+        "isExtraImport": true,
+        "detail": "operations",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "importPath": "operations",
+        "description": "operations",
+        "isExtraImport": true,
+        "detail": "operations",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "importPath": "operations",
+        "description": "operations",
+        "isExtraImport": true,
+        "detail": "operations",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "importPath": "operations",
+        "description": "operations",
+        "isExtraImport": true,
+        "detail": "operations",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "calculator-cli.main",
+        "description": "calculator-cli.main",
+        "peekOfCode": "x = float(input(\"Enter first number: \"))\ny = float(input(\"Enter second number: \"))\nresult_add = add(x, y)\nresult_subtract = subtract(x, y)\nresult_multiply = multiply(x, y)\nresult_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):",
+        "detail": "calculator-cli.main",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "calculator-cli.main",
+        "description": "calculator-cli.main",
+        "peekOfCode": "y = float(input(\"Enter second number: \"))\nresult_add = add(x, y)\nresult_subtract = subtract(x, y)\nresult_multiply = multiply(x, y)\nresult_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):\n    print(result_divide)",
+        "detail": "calculator-cli.main",
+        "documentation": {}
+    },
+    {
+        "label": "result_add",
+        "kind": 5,
+        "importPath": "calculator-cli.main",
+        "description": "calculator-cli.main",
+        "peekOfCode": "result_add = add(x, y)\nresult_subtract = subtract(x, y)\nresult_multiply = multiply(x, y)\nresult_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):\n    print(result_divide)\nelse:",
+        "detail": "calculator-cli.main",
+        "documentation": {}
+    },
+    {
+        "label": "result_subtract",
+        "kind": 5,
+        "importPath": "calculator-cli.main",
+        "description": "calculator-cli.main",
+        "peekOfCode": "result_subtract = subtract(x, y)\nresult_multiply = multiply(x, y)\nresult_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):\n    print(result_divide)\nelse:\n    print(f\"Division: {result_divide}\")",
+        "detail": "calculator-cli.main",
+        "documentation": {}
+    },
+    {
+        "label": "result_multiply",
+        "kind": 5,
+        "importPath": "calculator-cli.main",
+        "description": "calculator-cli.main",
+        "peekOfCode": "result_multiply = multiply(x, y)\nresult_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):\n    print(result_divide)\nelse:\n    print(f\"Division: {result_divide}\")",
+        "detail": "calculator-cli.main",
+        "documentation": {}
+    },
+    {
+        "label": "result_divide",
+        "kind": 5,
+        "importPath": "calculator-cli.main",
+        "description": "calculator-cli.main",
+        "peekOfCode": "result_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):\n    print(result_divide)\nelse:\n    print(f\"Division: {result_divide}\")",
+        "detail": "calculator-cli.main",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "calculator-cli.operations",
+        "description": "calculator-cli.operations",
+        "peekOfCode": "def add(x, y):\n    return x + y\ndef subtract(x, y):\n    return x - y\ndef multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y",
+        "detail": "calculator-cli.operations",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "kind": 2,
+        "importPath": "calculator-cli.operations",
+        "description": "calculator-cli.operations",
+        "peekOfCode": "def subtract(x, y):\n    return x - y\ndef multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y",
+        "detail": "calculator-cli.operations",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "calculator-cli.operations",
+        "description": "calculator-cli.operations",
+        "peekOfCode": "def multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y",
+        "detail": "calculator-cli.operations",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "calculator-cli.operations",
+        "description": "calculator-cli.operations",
+        "peekOfCode": "def divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y",
+        "detail": "calculator-cli.operations",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "name = \"Abdallah\"\nage = 24\nheight = 1.75\nis_student = True\nprint(f\"My name is {name}\")\nprint(f\"My age is {age}\")\nprint(f\"My height is {height}\")\nprint(f\"Student: {is_student}\")\nprint(\"-\" * 30)\n# ==========================",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "age = 24\nheight = 1.75\nis_student = True\nprint(f\"My name is {name}\")\nprint(f\"My age is {age}\")\nprint(f\"My height is {height}\")\nprint(f\"Student: {is_student}\")\nprint(\"-\" * 30)\n# ==========================\n# Type Casting",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "height",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "height = 1.75\nis_student = True\nprint(f\"My name is {name}\")\nprint(f\"My age is {age}\")\nprint(f\"My height is {height}\")\nprint(f\"Student: {is_student}\")\nprint(\"-\" * 30)\n# ==========================\n# Type Casting\n# ==========================",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "is_student",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "is_student = True\nprint(f\"My name is {name}\")\nprint(f\"My age is {age}\")\nprint(f\"My height is {height}\")\nprint(f\"Student: {is_student}\")\nprint(\"-\" * 30)\n# ==========================\n# Type Casting\n# ==========================\nnumber = \"100\"",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "number = \"100\"\nprint(int(number) + 50)\nprint(\"-\" * 30)\n# ==========================\n# Strings\n# ==========================\ntext = \"  Python Programming  \"\nprint(text.upper())\nprint(text.lower())\nprint(text.strip())",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "text = \"  Python Programming  \"\nprint(text.upper())\nprint(text.lower())\nprint(text.strip())\nprint(text.replace(\"Python\", \"AI\"))\nprint(text.startswith(\" \"))\nprint(text.endswith(\"g  \"))\nprint(\"-\" * 30)\n# ==========================\n# Lists",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "languages",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "languages = [\"Python\", \"Java\", \"PHP\", \"C++\"]\nprint(languages)\nlanguages.append(\"JavaScript\")\nprint(languages)\nlanguages.remove(\"PHP\")\nprint(languages)\nprint(languages[0])\nprint(languages[-1])\nprint(\"-\" * 30)\n# ==========================",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "colors = (\"Red\", \"Green\", \"Blue\")\nprint(colors)\nprint(\"-\" * 30)\n# ==========================\n# Set\n# ==========================\nnumbers = {1, 2, 2, 3, 4, 4, 5}\nprint(numbers)\nprint(\"-\" * 30)\n# ==========================",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "numbers = {1, 2, 2, 3, 4, 4, 5}\nprint(numbers)\nprint(\"-\" * 30)\n# ==========================\n# Dictionary\n# ==========================\nstudent = {\"name\": \"Abdallah\", \"age\": 24, \"major\": \"Computer Science\"}\nprint(student)\nstudent[\"gpa\"] = 94.1\nprint(student)",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "student",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "student = {\"name\": \"Abdallah\", \"age\": 24, \"major\": \"Computer Science\"}\nprint(student)\nstudent[\"gpa\"] = 94.1\nprint(student)\nstudent[\"major\"] = \"AI Engineering\"\nprint(student)\ndel student[\"age\"]\nprint(student)\nprint(\"-\" * 30)\n# ==========================",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "student[\"gpa\"]",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "student[\"gpa\"] = 94.1\nprint(student)\nstudent[\"major\"] = \"AI Engineering\"\nprint(student)\ndel student[\"age\"]\nprint(student)\nprint(\"-\" * 30)\n# ==========================\n# Input\n# ==========================",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "student[\"major\"]",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "student[\"major\"] = \"AI Engineering\"\nprint(student)\ndel student[\"age\"]\nprint(student)\nprint(\"-\" * 30)\n# ==========================\n# Input\n# ==========================\nuser_name = input(\"Enter your name: \")\nuser_age = int(input(\"Enter your age: \"))",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "user_name",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "user_name = input(\"Enter your name: \")\nuser_age = int(input(\"Enter your age: \"))\nprint(f\"Hello {user_name}\")\nprint(f\"Next year you will be {user_age + 1} years old.\")",
+        "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "user_age",
+        "kind": 5,
+        "importPath": "practice.day01",
+        "description": "practice.day01",
+        "peekOfCode": "user_age = int(input(\"Enter your age: \"))\nprint(f\"Hello {user_name}\")\nprint(f\"Next year you will be {user_age + 1} years old.\")",
+        "detail": "practice.day01",
+        "documentation": {}
+    }
+]
