@@ -32,56 +32,27 @@
         "documentation": {}
     },
     {
-        "label": "x",
-        "kind": 5,
-        "importPath": "calculator-cli.main",
-        "description": "calculator-cli.main",
-        "peekOfCode": "x = float(input(\"Enter first number: \"))\ny = float(input(\"Enter second number: \"))\nresult_add = add(x, y)\nresult_subtract = subtract(x, y)\nresult_multiply = multiply(x, y)\nresult_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):",
-        "detail": "calculator-cli.main",
+        "label": "power",
+        "importPath": "operations",
+        "description": "operations",
+        "isExtraImport": true,
+        "detail": "operations",
         "documentation": {}
     },
     {
-        "label": "y",
-        "kind": 5,
-        "importPath": "calculator-cli.main",
-        "description": "calculator-cli.main",
-        "peekOfCode": "y = float(input(\"Enter second number: \"))\nresult_add = add(x, y)\nresult_subtract = subtract(x, y)\nresult_multiply = multiply(x, y)\nresult_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):\n    print(result_divide)",
-        "detail": "calculator-cli.main",
+        "label": "modulus",
+        "importPath": "operations",
+        "description": "operations",
+        "isExtraImport": true,
+        "detail": "operations",
         "documentation": {}
     },
     {
-        "label": "result_add",
+        "label": "first_loop",
         "kind": 5,
         "importPath": "calculator-cli.main",
         "description": "calculator-cli.main",
-        "peekOfCode": "result_add = add(x, y)\nresult_subtract = subtract(x, y)\nresult_multiply = multiply(x, y)\nresult_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):\n    print(result_divide)\nelse:",
-        "detail": "calculator-cli.main",
-        "documentation": {}
-    },
-    {
-        "label": "result_subtract",
-        "kind": 5,
-        "importPath": "calculator-cli.main",
-        "description": "calculator-cli.main",
-        "peekOfCode": "result_subtract = subtract(x, y)\nresult_multiply = multiply(x, y)\nresult_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):\n    print(result_divide)\nelse:\n    print(f\"Division: {result_divide}\")",
-        "detail": "calculator-cli.main",
-        "documentation": {}
-    },
-    {
-        "label": "result_multiply",
-        "kind": 5,
-        "importPath": "calculator-cli.main",
-        "description": "calculator-cli.main",
-        "peekOfCode": "result_multiply = multiply(x, y)\nresult_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):\n    print(result_divide)\nelse:\n    print(f\"Division: {result_divide}\")",
-        "detail": "calculator-cli.main",
-        "documentation": {}
-    },
-    {
-        "label": "result_divide",
-        "kind": 5,
-        "importPath": "calculator-cli.main",
-        "description": "calculator-cli.main",
-        "peekOfCode": "result_divide = divide(x, y)\nprint(f\"Addition: {result_add}\")\nprint(f\"Subtraction: {result_subtract}\")\nprint(f\"Multiplication: {result_multiply}\")\nif isinstance(result_divide, str):\n    print(result_divide)\nelse:\n    print(f\"Division: {result_divide}\")",
+        "peekOfCode": "first_loop = 0\nwhile True:\n    if first_loop:\n        cont = input(\"Do you want to continue? (y/n): \")\n        if cont.lower() != \"y\":\n            print(\"Exiting the calculator. Goodbye!\")\n            break\n    x = float(input(\"Enter first number: \"))\n    y = float(input(\"Enter second number: \"))\n    print(",
         "detail": "calculator-cli.main",
         "documentation": {}
     },
@@ -99,7 +70,7 @@
         "kind": 2,
         "importPath": "calculator-cli.operations",
         "description": "calculator-cli.operations",
-        "peekOfCode": "def subtract(x, y):\n    return x - y\ndef multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y",
+        "peekOfCode": "def subtract(x, y):\n    return x - y\ndef multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y\ndef power(x, y):\n    return x**y",
         "detail": "calculator-cli.operations",
         "documentation": {}
     },
@@ -108,7 +79,7 @@
         "kind": 2,
         "importPath": "calculator-cli.operations",
         "description": "calculator-cli.operations",
-        "peekOfCode": "def multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y",
+        "peekOfCode": "def multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y\ndef power(x, y):\n    return x**y\ndef modulus(x, y):\n    if y == 0:",
         "detail": "calculator-cli.operations",
         "documentation": {}
     },
@@ -117,7 +88,25 @@
         "kind": 2,
         "importPath": "calculator-cli.operations",
         "description": "calculator-cli.operations",
-        "peekOfCode": "def divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y",
+        "peekOfCode": "def divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y\ndef power(x, y):\n    return x**y\ndef modulus(x, y):\n    if y == 0:\n        return \"Error: Cannot perform modulus by zero\"\n    return x % y",
+        "detail": "calculator-cli.operations",
+        "documentation": {}
+    },
+    {
+        "label": "power",
+        "kind": 2,
+        "importPath": "calculator-cli.operations",
+        "description": "calculator-cli.operations",
+        "peekOfCode": "def power(x, y):\n    return x**y\ndef modulus(x, y):\n    if y == 0:\n        return \"Error: Cannot perform modulus by zero\"\n    return x % y",
+        "detail": "calculator-cli.operations",
+        "documentation": {}
+    },
+    {
+        "label": "modulus",
+        "kind": 2,
+        "importPath": "calculator-cli.operations",
+        "description": "calculator-cli.operations",
+        "peekOfCode": "def modulus(x, y):\n    if y == 0:\n        return \"Error: Cannot perform modulus by zero\"\n    return x % y",
         "detail": "calculator-cli.operations",
         "documentation": {}
     },
