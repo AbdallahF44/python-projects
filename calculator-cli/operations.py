@@ -12,7 +12,7 @@ def multiply(x, y):
 
 def divide(x, y):
     if y == 0:
-        return "Error: Cannot divide by zero"
+        raise ValueError("Error: Cannot divide by zero")
     return x / y
 
 
@@ -22,5 +22,5 @@ def power(x, y):
 
 def modulus(x, y):
     if y == 0:
-        return "Error: Cannot perform modulus by zero"
+        raise ValueError("Error: Cannot perform modulus by zero")
     return x % y

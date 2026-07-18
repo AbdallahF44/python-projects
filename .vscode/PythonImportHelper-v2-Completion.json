@@ -48,11 +48,29 @@
         "documentation": {}
     },
     {
-        "label": "first_loop",
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "operations",
         "kind": 5,
         "importPath": "calculator-cli.main",
         "description": "calculator-cli.main",
-        "peekOfCode": "first_loop = 0\nwhile True:\n    if first_loop:\n        cont = input(\"Do you want to continue? (y/n): \")\n        if cont.lower() != \"y\":\n            print(\"Exiting the calculator. Goodbye!\")\n            break\n    x = float(input(\"Enter first number: \"))\n    y = float(input(\"Enter second number: \"))\n    print(",
+        "peekOfCode": "operations = {1: add, 2: subtract, 3: multiply, 4: divide, 5: power, 6: modulus}\nwhile True:\n    try:\n        x = float(input(\"Enter first number: \"))\n        y = float(input(\"Enter second number: \"))\n    except ValueError:\n        print(\"Invalid input. Please enter valid numbers.\")\n        continue\n    print(\"\"\"---------\n1. Addition",
         "detail": "calculator-cli.main",
         "documentation": {}
     },
@@ -61,7 +79,7 @@
         "kind": 2,
         "importPath": "calculator-cli.operations",
         "description": "calculator-cli.operations",
-        "peekOfCode": "def add(x, y):\n    return x + y\ndef subtract(x, y):\n    return x - y\ndef multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y",
+        "peekOfCode": "def add(x, y):\n    return x + y\ndef subtract(x, y):\n    return x - y\ndef multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        raise ValueError(\"Error: Cannot divide by zero\")\n    return x / y",
         "detail": "calculator-cli.operations",
         "documentation": {}
     },
@@ -70,7 +88,7 @@
         "kind": 2,
         "importPath": "calculator-cli.operations",
         "description": "calculator-cli.operations",
-        "peekOfCode": "def subtract(x, y):\n    return x - y\ndef multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y\ndef power(x, y):\n    return x**y",
+        "peekOfCode": "def subtract(x, y):\n    return x - y\ndef multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        raise ValueError(\"Error: Cannot divide by zero\")\n    return x / y\ndef power(x, y):\n    return x**y",
         "detail": "calculator-cli.operations",
         "documentation": {}
     },
@@ -79,7 +97,7 @@
         "kind": 2,
         "importPath": "calculator-cli.operations",
         "description": "calculator-cli.operations",
-        "peekOfCode": "def multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y\ndef power(x, y):\n    return x**y\ndef modulus(x, y):\n    if y == 0:",
+        "peekOfCode": "def multiply(x, y):\n    return x * y\ndef divide(x, y):\n    if y == 0:\n        raise ValueError(\"Error: Cannot divide by zero\")\n    return x / y\ndef power(x, y):\n    return x**y\ndef modulus(x, y):\n    if y == 0:",
         "detail": "calculator-cli.operations",
         "documentation": {}
     },
@@ -88,7 +106,7 @@
         "kind": 2,
         "importPath": "calculator-cli.operations",
         "description": "calculator-cli.operations",
-        "peekOfCode": "def divide(x, y):\n    if y == 0:\n        return \"Error: Cannot divide by zero\"\n    return x / y\ndef power(x, y):\n    return x**y\ndef modulus(x, y):\n    if y == 0:\n        return \"Error: Cannot perform modulus by zero\"\n    return x % y",
+        "peekOfCode": "def divide(x, y):\n    if y == 0:\n        raise ValueError(\"Error: Cannot divide by zero\")\n    return x / y\ndef power(x, y):\n    return x**y\ndef modulus(x, y):\n    if y == 0:\n        raise ValueError(\"Error: Cannot perform modulus by zero\")\n    return x % y",
         "detail": "calculator-cli.operations",
         "documentation": {}
     },
@@ -97,7 +115,7 @@
         "kind": 2,
         "importPath": "calculator-cli.operations",
         "description": "calculator-cli.operations",
-        "peekOfCode": "def power(x, y):\n    return x**y\ndef modulus(x, y):\n    if y == 0:\n        return \"Error: Cannot perform modulus by zero\"\n    return x % y",
+        "peekOfCode": "def power(x, y):\n    return x**y\ndef modulus(x, y):\n    if y == 0:\n        raise ValueError(\"Error: Cannot perform modulus by zero\")\n    return x % y",
         "detail": "calculator-cli.operations",
         "documentation": {}
     },
@@ -106,7 +124,7 @@
         "kind": 2,
         "importPath": "calculator-cli.operations",
         "description": "calculator-cli.operations",
-        "peekOfCode": "def modulus(x, y):\n    if y == 0:\n        return \"Error: Cannot perform modulus by zero\"\n    return x % y",
+        "peekOfCode": "def modulus(x, y):\n    if y == 0:\n        raise ValueError(\"Error: Cannot perform modulus by zero\")\n    return x % y",
         "detail": "calculator-cli.operations",
         "documentation": {}
     },
@@ -234,6 +252,33 @@
         "description": "practice.day01",
         "peekOfCode": "user_age = int(input(\"Enter your age: \"))\nprint(f\"Hello {user_name}\")\nprint(f\"Next year you will be {user_age + 1} years old.\")",
         "detail": "practice.day01",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "practice.day02",
+        "description": "practice.day02",
+        "peekOfCode": "data = {\n    \"name\": \"Abdallah\",\n    \"age\": 25,\n    \"major\": \"Computer Science\",\n    \"gpa\": 94.1,\n    \"courses\": [\"Data Structures\", \"Algorithms\", \"AI\"],\n}\na = json.loads(json.dumps(data))\nprint(a)\nwith open(\"data.json\", \"w\") as file:",
+        "detail": "practice.day02",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "practice.day02",
+        "description": "practice.day02",
+        "peekOfCode": "a = json.loads(json.dumps(data))\nprint(a)\nwith open(\"data.json\", \"w\") as file:\n    print(json.dump(data, file))\nx = {\n    \"name\": \"John\",\n    \"age\": 30,\n    \"married\": True,\n    \"divorced\": False,\n    \"children\": (\"Ann\", \"Billy\"),",
+        "detail": "practice.day02",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "practice.day02",
+        "description": "practice.day02",
+        "peekOfCode": "x = {\n    \"name\": \"John\",\n    \"age\": 30,\n    \"married\": True,\n    \"divorced\": False,\n    \"children\": (\"Ann\", \"Billy\"),\n    \"pets\": None,\n    \"cars\": [{\"model\": \"BMW 230\", \"mpg\": 27.5}, {\"model\": \"Ford Edge\", \"mpg\": 24.1}],\n}\nprint(json.dumps(x, indent=4, separators=(\"+\", \" => \"), sort_keys=True))",
+        "detail": "practice.day02",
         "documentation": {}
     }
 ]
