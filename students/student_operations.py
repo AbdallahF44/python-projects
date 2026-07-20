@@ -14,7 +14,7 @@ def add_student(students, student):
 
 def show_students(students):
     if not students:
-        print("No students found.")
+        print("No students found")
         return
     for student in students.values():
         print(
