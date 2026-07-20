@@ -66,6 +66,54 @@
         "documentation": {}
     },
     {
+        "label": "save_students",
+        "importPath": "student_operations",
+        "description": "student_operations",
+        "isExtraImport": true,
+        "detail": "student_operations",
+        "documentation": {}
+    },
+    {
+        "label": "add_student",
+        "importPath": "student_operations",
+        "description": "student_operations",
+        "isExtraImport": true,
+        "detail": "student_operations",
+        "documentation": {}
+    },
+    {
+        "label": "search_for_student",
+        "importPath": "student_operations",
+        "description": "student_operations",
+        "isExtraImport": true,
+        "detail": "student_operations",
+        "documentation": {}
+    },
+    {
+        "label": "show_students",
+        "importPath": "student_operations",
+        "description": "student_operations",
+        "isExtraImport": true,
+        "detail": "student_operations",
+        "documentation": {}
+    },
+    {
+        "label": "update_student",
+        "importPath": "student_operations",
+        "description": "student_operations",
+        "isExtraImport": true,
+        "detail": "student_operations",
+        "documentation": {}
+    },
+    {
+        "label": "delete_student",
+        "importPath": "student_operations",
+        "description": "student_operations",
+        "isExtraImport": true,
+        "detail": "student_operations",
+        "documentation": {}
+    },
+    {
         "label": "operations",
         "kind": 5,
         "importPath": "calculator-cli.main",
@@ -279,6 +327,303 @@
         "description": "practice.day02",
         "peekOfCode": "x = {\n    \"name\": \"John\",\n    \"age\": 30,\n    \"married\": True,\n    \"divorced\": False,\n    \"children\": (\"Ann\", \"Billy\"),\n    \"pets\": None,\n    \"cars\": [{\"model\": \"BMW 230\", \"mpg\": 27.5}, {\"model\": \"Ford Edge\", \"mpg\": 24.1}],\n}\nprint(json.dumps(x, indent=4, separators=(\"+\", \" => \"), sort_keys=True))",
         "detail": "practice.day02",
+        "documentation": {}
+    },
+    {
+        "label": "myfunc",
+        "kind": 2,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "def myfunc():\n    x = 300\n    print(x)\nmyfunc()\n# print(x)\nnumbers = [1, 2, 3, 4, 5]\ndoubled = map(lambda x: x * 2, numbers)\nprint(type(doubled))\nnumbers = [1, 2, 3, 4, 5, 6, 7, 8]\nodd_numbers = list(filter(lambda x: x % 2 != 0, numbers))",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "fibonacci",
+        "kind": 2,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\nprint(fibonacci(2))\ndef fibonacci():\n    a, b = 0, 1\n    while True:\n        yield a",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "fibonacci",
+        "kind": 2,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "def fibonacci():\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b\n# Get first 100 Fibonacci numbers\ngen = fibonacci()\nfor i in range(100):\n    print(next(gen))",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "t1 = 1\nprint(type(t1))\nt2 = (1,)\nprint(type(t2))\nt3 = tuple((1,))\nprint(type(t3))\nthistuple = (\"apple\", \"banana\", \"cherry\")\ny = list(thistuple)\ny.append(\"orange\")\nthistuple = tuple(y)",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "t2",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "t2 = (1,)\nprint(type(t2))\nt3 = tuple((1,))\nprint(type(t3))\nthistuple = (\"apple\", \"banana\", \"cherry\")\ny = list(thistuple)\ny.append(\"orange\")\nthistuple = tuple(y)\nprint(thistuple)\nthistuple = (\"apple\", \"banana\", \"cherry\")",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "t3",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "t3 = tuple((1,))\nprint(type(t3))\nthistuple = (\"apple\", \"banana\", \"cherry\")\ny = list(thistuple)\ny.append(\"orange\")\nthistuple = tuple(y)\nprint(thistuple)\nthistuple = (\"apple\", \"banana\", \"cherry\")\ny = dict(enumerate(thistuple))\ny[len(y)] = \"orange\"",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "thistuple",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "thistuple = (\"apple\", \"banana\", \"cherry\")\ny = list(thistuple)\ny.append(\"orange\")\nthistuple = tuple(y)\nprint(thistuple)\nthistuple = (\"apple\", \"banana\", \"cherry\")\ny = dict(enumerate(thistuple))\ny[len(y)] = \"orange\"\nthistuple = tuple(y.values())\nprint(thistuple)",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "y = list(thistuple)\ny.append(\"orange\")\nthistuple = tuple(y)\nprint(thistuple)\nthistuple = (\"apple\", \"banana\", \"cherry\")\ny = dict(enumerate(thistuple))\ny[len(y)] = \"orange\"\nthistuple = tuple(y.values())\nprint(thistuple)\nprint(tuple(enumerate(thistuple)))",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "thistuple",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "thistuple = tuple(y)\nprint(thistuple)\nthistuple = (\"apple\", \"banana\", \"cherry\")\ny = dict(enumerate(thistuple))\ny[len(y)] = \"orange\"\nthistuple = tuple(y.values())\nprint(thistuple)\nprint(tuple(enumerate(thistuple)))\nfruits = (\"apple\", \"banana\", \"cherry\")\ngreen, yellow, red = fruits",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "thistuple",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "thistuple = (\"apple\", \"banana\", \"cherry\")\ny = dict(enumerate(thistuple))\ny[len(y)] = \"orange\"\nthistuple = tuple(y.values())\nprint(thistuple)\nprint(tuple(enumerate(thistuple)))\nfruits = (\"apple\", \"banana\", \"cherry\")\ngreen, yellow, red = fruits\nprint(green)\nprint(yellow)",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "y = dict(enumerate(thistuple))\ny[len(y)] = \"orange\"\nthistuple = tuple(y.values())\nprint(thistuple)\nprint(tuple(enumerate(thistuple)))\nfruits = (\"apple\", \"banana\", \"cherry\")\ngreen, yellow, red = fruits\nprint(green)\nprint(yellow)\nprint(red)",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "y[len(y)]",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "y[len(y)] = \"orange\"\nthistuple = tuple(y.values())\nprint(thistuple)\nprint(tuple(enumerate(thistuple)))\nfruits = (\"apple\", \"banana\", \"cherry\")\ngreen, yellow, red = fruits\nprint(green)\nprint(yellow)\nprint(red)\nprint(type(green))",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "thistuple",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "thistuple = tuple(y.values())\nprint(thistuple)\nprint(tuple(enumerate(thistuple)))\nfruits = (\"apple\", \"banana\", \"cherry\")\ngreen, yellow, red = fruits\nprint(green)\nprint(yellow)\nprint(red)\nprint(type(green))\nprint(type(yellow))",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "fruits = (\"apple\", \"banana\", \"cherry\")\ngreen, yellow, red = fruits\nprint(green)\nprint(yellow)\nprint(red)\nprint(type(green))\nprint(type(yellow))\nprint(type(red))\nfruits = (\"apple\", \"banana\", \"cherry\", \"strawberry\", \"raspberry\")\ngreen, yellow, *red = fruits",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "fruits = (\"apple\", \"banana\", \"cherry\", \"strawberry\", \"raspberry\")\ngreen, yellow, *red = fruits\nprint(green)\nprint(yellow)\nprint(red)\nl1 = [1, 2] * 3\nprint(l1)\nthisset = {\"apple\", \"banana\", \"cherry\", \"apple\"}\nprint(thisset)\nthisset = {\"\", False, 0}",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "l1",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "l1 = [1, 2] * 3\nprint(l1)\nthisset = {\"apple\", \"banana\", \"cherry\", \"apple\"}\nprint(thisset)\nthisset = {\"\", False, 0}\nprint(thisset)\nlist1 = [x for x in range(1, 11)]\ns1 = set(list1)\nprint(s1)\nprint(s1.pop())",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "thisset",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "thisset = {\"apple\", \"banana\", \"cherry\", \"apple\"}\nprint(thisset)\nthisset = {\"\", False, 0}\nprint(thisset)\nlist1 = [x for x in range(1, 11)]\ns1 = set(list1)\nprint(s1)\nprint(s1.pop())\nprint(list1)\n[print(x, y) for x, y in {1: 2, 3: 4}.items()]",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "thisset",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "thisset = {\"\", False, 0}\nprint(thisset)\nlist1 = [x for x in range(1, 11)]\ns1 = set(list1)\nprint(s1)\nprint(s1.pop())\nprint(list1)\n[print(x, y) for x, y in {1: 2, 3: 4}.items()]\n[print(x) for x in {1: 2, 3: 4}.values()]\ndef myfunc():",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "list1 = [x for x in range(1, 11)]\ns1 = set(list1)\nprint(s1)\nprint(s1.pop())\nprint(list1)\n[print(x, y) for x, y in {1: 2, 3: 4}.items()]\n[print(x) for x in {1: 2, 3: 4}.values()]\ndef myfunc():\n    x = 300\n    print(x)",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "s1 = set(list1)\nprint(s1)\nprint(s1.pop())\nprint(list1)\n[print(x, y) for x, y in {1: 2, 3: 4}.items()]\n[print(x) for x in {1: 2, 3: 4}.values()]\ndef myfunc():\n    x = 300\n    print(x)\nmyfunc()",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "numbers = [1, 2, 3, 4, 5]\ndoubled = map(lambda x: x * 2, numbers)\nprint(type(doubled))\nnumbers = [1, 2, 3, 4, 5, 6, 7, 8]\nodd_numbers = list(filter(lambda x: x % 2 != 0, numbers))\nprint(odd_numbers)\nstudents = [(\"Emil\", 25), (\"Tobias\", 22), (\"Linus\", 28)]\nsorted_students = sorted(students, key=lambda x: x[0])\nprint(sorted_students)\ndef fibonacci(n):",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "doubled",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "doubled = map(lambda x: x * 2, numbers)\nprint(type(doubled))\nnumbers = [1, 2, 3, 4, 5, 6, 7, 8]\nodd_numbers = list(filter(lambda x: x % 2 != 0, numbers))\nprint(odd_numbers)\nstudents = [(\"Emil\", 25), (\"Tobias\", 22), (\"Linus\", 28)]\nsorted_students = sorted(students, key=lambda x: x[0])\nprint(sorted_students)\ndef fibonacci(n):\n    if n <= 1:",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "numbers = [1, 2, 3, 4, 5, 6, 7, 8]\nodd_numbers = list(filter(lambda x: x % 2 != 0, numbers))\nprint(odd_numbers)\nstudents = [(\"Emil\", 25), (\"Tobias\", 22), (\"Linus\", 28)]\nsorted_students = sorted(students, key=lambda x: x[0])\nprint(sorted_students)\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "odd_numbers",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "odd_numbers = list(filter(lambda x: x % 2 != 0, numbers))\nprint(odd_numbers)\nstudents = [(\"Emil\", 25), (\"Tobias\", 22), (\"Linus\", 28)]\nsorted_students = sorted(students, key=lambda x: x[0])\nprint(sorted_students)\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "students",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "students = [(\"Emil\", 25), (\"Tobias\", 22), (\"Linus\", 28)]\nsorted_students = sorted(students, key=lambda x: x[0])\nprint(sorted_students)\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\nprint(fibonacci(2))\ndef fibonacci():",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "sorted_students",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "sorted_students = sorted(students, key=lambda x: x[0])\nprint(sorted_students)\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\nprint(fibonacci(2))\ndef fibonacci():\n    a, b = 0, 1",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "gen",
+        "kind": 5,
+        "importPath": "practice.day03",
+        "description": "practice.day03",
+        "peekOfCode": "gen = fibonacci()\nfor i in range(100):\n    print(next(gen))",
+        "detail": "practice.day03",
+        "documentation": {}
+    },
+    {
+        "label": "save_students",
+        "kind": 2,
+        "importPath": "students.student_operations",
+        "description": "students.student_operations",
+        "peekOfCode": "def save_students(students):\n    with open(\"students.json\", \"w\") as file:\n        json.dump(students, file, indent=4, ensure_ascii=False)\ndef add_student(students, student):\n    students[student[\"id\"]] = student\n    print(f\"Student {student['name']} added successfully.\")\n    return students\ndef show_students(students):\n    if not students:\n        print(\"No students found.\")",
+        "detail": "students.student_operations",
+        "documentation": {}
+    },
+    {
+        "label": "add_student",
+        "kind": 2,
+        "importPath": "students.student_operations",
+        "description": "students.student_operations",
+        "peekOfCode": "def add_student(students, student):\n    students[student[\"id\"]] = student\n    print(f\"Student {student['name']} added successfully.\")\n    return students\ndef show_students(students):\n    if not students:\n        print(\"No students found.\")\n        return\n    for student in students.values():\n        print(",
+        "detail": "students.student_operations",
+        "documentation": {}
+    },
+    {
+        "label": "show_students",
+        "kind": 2,
+        "importPath": "students.student_operations",
+        "description": "students.student_operations",
+        "peekOfCode": "def show_students(students):\n    if not students:\n        print(\"No students found.\")\n        return\n    for student in students.values():\n        print(\n            f\"ID: {student['id']}, Name: {student['name']}, Age: {student['age']}, Major: {student['major']}\"\n        )\ndef search_for_student(students, id_for_search):\n    return students.get(id_for_search)",
+        "detail": "students.student_operations",
+        "documentation": {}
+    },
+    {
+        "label": "search_for_student",
+        "kind": 2,
+        "importPath": "students.student_operations",
+        "description": "students.student_operations",
+        "peekOfCode": "def search_for_student(students, id_for_search):\n    return students.get(id_for_search)\ndef update_student(students):\n    id_for_update = input(\"Enter the ID of the student to update: \")\n    student_to_update = search_for_student(students, id_for_update)\n    if student_to_update:\n        print(\n            f\"ID: {student_to_update['id']}, Name: {student_to_update['name']}, Age: {student_to_update['age']}, Major: {student_to_update['major']}\"\n        )\n        new_name = input(\"*****\\nEnter new name (leave blank to keep current value): \")",
+        "detail": "students.student_operations",
+        "documentation": {}
+    },
+    {
+        "label": "update_student",
+        "kind": 2,
+        "importPath": "students.student_operations",
+        "description": "students.student_operations",
+        "peekOfCode": "def update_student(students):\n    id_for_update = input(\"Enter the ID of the student to update: \")\n    student_to_update = search_for_student(students, id_for_update)\n    if student_to_update:\n        print(\n            f\"ID: {student_to_update['id']}, Name: {student_to_update['name']}, Age: {student_to_update['age']}, Major: {student_to_update['major']}\"\n        )\n        new_name = input(\"*****\\nEnter new name (leave blank to keep current value): \")\n        new_age = input(\"Enter new age (leave blank to keep current value): \")\n        new_major = input(\"Enter new major (leave blank to keep current value): \")",
+        "detail": "students.student_operations",
+        "documentation": {}
+    },
+    {
+        "label": "delete_student",
+        "kind": 2,
+        "importPath": "students.student_operations",
+        "description": "students.student_operations",
+        "peekOfCode": "def delete_student(students, id_for_delete):\n    if id_for_delete in students:\n        del students[id_for_delete]\n        print(\"Student deleted successfully.\")\n    else:\n        print(\"Student not found.\")\n    return students",
+        "detail": "students.student_operations",
         "documentation": {}
     }
 ]
